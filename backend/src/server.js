@@ -1,3 +1,4 @@
+console.log("🔥 NEW DEPLOY VERSION 🔥");
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
