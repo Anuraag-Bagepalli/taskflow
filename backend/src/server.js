@@ -53,6 +53,10 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'API is working!' });
 });
 
+app.get('/debug-auth', (req, res) => {
+  res.send('AUTH ROUTES PRESENT');
+});
+
 // ============ AUTH ROUTES ============
 app.post('/api/auth/register', async (req, res) => {
   try {
