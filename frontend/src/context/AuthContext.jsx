@@ -1,3 +1,4 @@
+console.log("API URL:", import.meta.env.VITE_API_URL);
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';

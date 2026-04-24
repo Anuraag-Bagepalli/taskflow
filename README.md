@@ -2,41 +2,44 @@
 ```
 rbac-task-manager
 ├─ backend
-│  ├─ .env
 │  ├─ package-lock.json
 │  ├─ package.json
 │  └─ src
 │     ├─ config
 │     │  └─ database.js
 │     ├─ controllers
+│     │  ├─ adminController.js
 │     │  ├─ authController.js
 │     │  ├─ insightsController.js
-│     │  └─ taskController.js
+│     │  ├─ taskController.js
+│     │  └─ userController.js
 │     ├─ middleware
 │     │  └─ authMiddleware.js
 │     ├─ models
 │     │  ├─ Task.js
 │     │  └─ User.js
 │     ├─ routes
+│     │  ├─ adminRoutes.js
 │     │  ├─ authRoutes.js
 │     │  ├─ insightsRoutes.js
 │     │  └─ taskRoutes.js
 │     └─ server.js
 ├─ frontend
-│  ├─ .env
 │  ├─ eslint.config.js
 │  ├─ index.html
 │  ├─ package-lock.json
 │  ├─ package.json
-│  ├─ postcss.config.js
 │  ├─ public
-│  │  └─ vite.svg
+│  │  ├─ favicon.svg
+│  │  └─ icons.svg
 │  ├─ README.md
 │  ├─ src
 │  │  ├─ App.css
 │  │  ├─ App.jsx
 │  │  ├─ assets
-│  │  │  └─ react.svg
+│  │  │  ├─ hero.png
+│  │  │  ├─ react.svg
+│  │  │  └─ vite.svg
 │  │  ├─ components
 │  │  │  ├─ Navbar.jsx
 │  │  │  └─ PrivateRoute.jsx
@@ -45,12 +48,14 @@ rbac-task-manager
 │  │  ├─ index.css
 │  │  ├─ main.jsx
 │  │  └─ pages
+│  │     ├─ AdminDashboard.jsx
+│  │     ├─ AdminUsers.jsx
 │  │     ├─ Dashboard.jsx
+│  │     ├─ LandingPage.jsx
 │  │     ├─ Login.jsx
 │  │     ├─ Register.jsx
 │  │     ├─ TaskForm.jsx
 │  │     └─ Tasks.jsx
-│  ├─ tailwind.config.js
 │  └─ vite.config.js
 └─ README.md
 
